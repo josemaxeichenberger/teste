@@ -1,0 +1,32 @@
+# =============================================
+# ARQUIVOS SENSÍVEIS - NUNCA SUBIR
+# =============================================
+conexao/conexao.php
+wp-config.php
+
+# =============================================
+# DEPENDÊNCIAS
+# =============================================
+api/vendor/
+node_modules/
+
+# =============================================
+# WORDPRESS CORE (não faz parte do projeto)
+# =============================================
+wp-admin/
+wp-includes/
+wp-*.php
+xmlrpc.php
+index.php
+license.txt
+readme.html
+.htaccess
+
+# =============================================
+# SISTEMA E EDITORES
+# =============================================
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+.env

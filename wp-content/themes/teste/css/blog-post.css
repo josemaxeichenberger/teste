@@ -1,0 +1,3107 @@
+/* @author GustavoChaconDeveloper - github.com/GustavoChaconDeveloper */
+/* ===== BLOG POST PAGE STYLES ===== */
+
+/* ── Blog Post Hero ──────────────────────────────────────────────── */
+.blog-post-hero {
+    background: #001134;
+    padding: 80px 64px 60px;
+}
+
+.blog-post-hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-post-hero-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin: 0;
+}
+
+.blog-post-hero-excerpt {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    max-width: 600px;
+}
+
+.blog-post-hero-date {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .blog-post-hero {
+        padding: 60px 20px 40px;
+    }
+
+    .blog-post-hero-title {
+        font-size: 32px;
+    }
+
+    .blog-post-hero-excerpt {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-post-hero {
+        padding: 50px 16px 36px;
+    }
+
+    .blog-post-hero-title {
+        font-size: 26px;
+    }
+
+    .blog-post-hero-excerpt {
+        font-size: 14px;
+    }
+}
+
+/* ── Blog Post Content (Container Branco) ───────────────────────── */
+.blog-post-content {
+    background-color: #ffffff;
+    padding: 120px 64px 80px;
+    clip-path: polygon(0 80px, 100% 0, 100% 100%, 0 100%);
+    margin-top: -80px;
+}
+
+.blog-post-content-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blog-post-featured-image {
+    width: 100%;
+}
+
+.blog-post-featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-post-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-post-body p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #1a1a1a;
+    text-align: justify;
+    margin: 0;
+}
+
+.blog-post-section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 20px 0 0 0;
+}
+
+.blog-post-subsection-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 8px 0;
+}
+
+.blog-post-key-features {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 12px 0 !important;
+}
+
+.blog-post-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.blog-post-features-list li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #1a1a1a;
+    text-align: justify;
+    display: flex;
+    gap: 8px;
+}
+
+.blog-post-feature-star {
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.blog-post-two-col {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    margin-top: 8px;
+}
+
+.blog-post-two-col-image {
+    flex: 0 0 auto;
+    width: 48%;
+}
+
+.blog-post-two-col-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-post-two-col-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media (max-width: 640px) {
+    .blog-post-two-col {
+        flex-direction: column;
+    }
+
+    .blog-post-two-col-image {
+        width: 100%;
+    }
+}
+
+/* ── Divisor ─────────────────────────────────────────────────────── */
+.blog-post-divider {
+    width: 120px;
+    height: 3px;
+    background-color: #1a3ed4;
+    border: none;
+    margin: 12px 0;
+}
+
+/* ── Other News Header ───────────────────────────────────────────── */
+.blog-other-news-header {
+    background-color: #ffffff;
+    padding: 60px 24px 120px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 80px), 0 100%);
+    margin-bottom: -80px;
+    position: relative;
+    z-index: 1;
+}
+
+.blog-other-news-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin: 0 0 12px 0;
+}
+
+.blog-other-news-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    margin: 0 0 48px 0;
+}
+
+.blog-other-news-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.blog-other-news-grid .blog-card-date,
+.blog-other-news-grid .blog-card-title,
+.blog-other-news-grid .blog-card-excerpt {
+    color: #ffffff;
+}
+
+.blog-other-news-grid .blog-card {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.blog-other-news-grid .blog-card-link {
+    color: #ffffff;
+}
+
+.blog-other-news-grid .blog-card-link:hover {
+    color: #D70E09;
+}
+
+@media (max-width: 768px) {
+    .blog-other-news-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-other-news-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-post-content {
+        padding: 100px 32px 60px;
+        clip-path: polygon(0 60px, 100% 0, 100% 100%, 0 100%);
+        margin-top: -60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-post-content {
+        padding: 80px 20px 40px;
+        clip-path: polygon(0 40px, 100% 0, 100% 100%, 0 100%);
+        margin-top: -40px;
+    }
+}
+
+/* ── Blog Section ────────────────────────────────────────────────── */
+.blog-section {
+    padding: 100px 20px;
+    min-height: 10vh;
+}
+
+.blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 80px 0;
+    line-height: 1.2;
+}
+
+.blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    width: calc((100% - 64px) / 3);
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.blog-card-image {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.blog-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover .blog-card-image img {
+    transform: scale(1.05);
+}
+
+.blog-card-content {
+    padding: 24px;
+    display: flex;
+    background: #00133D;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1;
+}
+
+.blog-card-date {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.blog-card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #E9E9E9;
+    margin: 0;
+    align-self: stretch;
+}
+
+.blog-card-excerpt {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #E9E9E9;
+    opacity: 0.7;
+    margin: 0;
+    flex: 1;
+    align-self: stretch;
+}
+
+.blog-card-link {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    margin: 0;
+}
+
+.blog-card-link:hover {
+    color: #D70E09;
+}
+
+/* ── Responsive Blog ──────────────────────────────────────────────── */
+@media (max-width: 992px) {
+    .blog-card {
+        width: calc((100% - 32px) / 2);
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-section {
+        padding: 80px 20px;
+    }
+
+    .blog-title {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+    .blog-card {
+        width: 100%;
+    }
+
+    .blog-card-image {
+        height: 200px;
+    }
+
+    .blog-card-content {
+        padding: 24px 20px;
+    }
+
+    .blog-card-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-section {
+        padding: 60px 16px;
+    }
+
+    .blog-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .blog-card-image {
+        height: 180px;
+    }
+
+    .blog-card-content {
+        padding: 20px 16px;
+    }
+
+    .blog-card-title {
+        font-size: 16px;
+    }
+
+    .blog-card-excerpt {
+        font-size: 14px;
+    }
+
+    .blog-card-date {
+        font-size: 12px;
+    }
+
+    .blog-card-link {
+        font-size: 14px;
+    }
+}
+
+/* ===== APPLICATION PROCESS PAGE STYLES (mantidos para compatibilidade) ===== */
+
+/* ── Top Banner ──────────────────────────────────────────────────── */
+.top-banner {
+    background: linear-gradient(90deg, #001845 0%, #003399 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 0;
+    position: relative;
+    z-index: 1000;
+}
+
+.top-banner-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 20px;
+}
+
+.banner-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.banner-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    white-space: nowrap;
+    font-style: italic;
+}
+
+.banner-countdown {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 4px;
+    min-width: 55px;
+    height: 33px;
+    background: rgba(23, 23, 23, 0.2);
+    border-radius: 8px;
+}
+
+.countdown-value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 100%;
+    text-align: center;
+}
+
+.countdown-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #F2F2F2;
+    line-height: 17px;
+    text-align: center;
+}
+
+.countdown-separator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin: 0;
+}
+
+.countdown-separator .dot {
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.banner-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 8px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.banner-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 992px) {
+    .top-banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2001;
+    }
+
+    .top-banner-content {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .banner-title {
+        font-size: 14px;
+    }
+
+    .countdown-value {
+        font-size: 16px;
+    }
+
+    .countdown-label {
+        font-size: 9px;
+    }
+}
+
+/* ── Hero Scouting ────────────────────────────────────────────────── */
+.sp-hero {
+    margin-bottom: 56px;
+    text-align: center;
+}
+
+.sp-scouting-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 50px 0;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.sp-scouting-content {
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sp-scouting-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+    text-align: left;
+    margin: 0;
+}
+
+/* ── Training Page Specific Styles ──────────────────────────────── */
+.sp-training-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0 0 16px 0;
+}
+
+.sp-training-footer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+    text-align: left;
+    margin: 60px auto 0;
+    max-width: 920px;
+}
+
+.training-skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 32px;
+}
+
+/* ── Training Additional Sections ────────────────────────────────── */
+.training-learning-section,
+.training-collaborative-section {
+    padding: 60px 20px;
+}
+
+.training-section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 28px 0;
+    line-height: 1.3;
+}
+
+.training-section-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+    margin: 0;
+    max-width: 1000px;
+}
+
+.training-cta-wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.training-academy-btn {
+    display: inline-block;
+    padding: 16px 48px;
+    background: #D70E09;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(215, 14, 9, 0.4);
+}
+
+.training-academy-btn:hover {
+    background: #b00c08;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(215, 14, 9, 0.5);
+    color: #ffffff;
+}
+
+/* ── Mentorship Benefits Grid ────────────────────────────────────── */
+.mentorship-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    max-width: 1000px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+}
+
+.mentorship-benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.mentorship-benefit-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mentorship-benefit-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.mentorship-benefit-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mentorship-benefit-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ── Mentorship Also Includes Section ───────────────────────────── */
+.mentorship-also-section {
+    width: calc(100% + 80px);
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-top: 56px;
+}
+
+.mentorship-also-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: left;
+    margin: 0 0 24px 0;
+    line-height: 1.3;
+}
+
+.mentorship-also-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 100%;
+}
+
+.mentorship-also-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 28px;
+    gap: 16px;
+    background: rgba(241, 241, 241, 0.07);
+    backdrop-filter: blur(27px);
+    -webkit-backdrop-filter: blur(27px);
+    border-radius: 0;
+    text-align: left;
+    min-height: 180px;
+}
+
+.mentorship-also-card:last-child {
+    border-right: none;
+}
+
+.mentorship-also-card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
+}
+
+.mentorship-also-card-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .mentorship-also-section {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 40px;
+    }
+
+    .mentorship-also-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mentorship-also-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .mentorship-also-card {
+        padding: 32px 24px;
+        min-height: auto;
+    }
+
+    .mentorship-also-card:last-child {
+        border-bottom: none;
+    }
+
+    .mentorship-also-card-desc {
+        font-size: 14px;
+    }
+}
+
+/* ── Learning and Skill Development Section ─────────────────────── */
+.sp-learning-section {
+    padding: 80px 20px 100px;
+    background: linear-gradient(180deg, #001134 0%, #001845 100%);
+}
+
+.sp-learning-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sp-learning-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 28px 0;
+    line-height: 1.2;
+}
+
+.sp-learning-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+    margin: 0 0 20px 0;
+}
+
+.sp-learning-text--bold {
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 48px;
+}
+
+.sp-learning-cta {
+    display: flex;
+    justify-content: center;
+}
+
+.sp-learning-btn {
+    display: inline-block;
+    padding: 16px 48px;
+    background: #D70E09;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(215, 14, 9, 0.4);
+}
+
+.sp-learning-btn:hover {
+    background: #b00c08;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(215, 14, 9, 0.5);
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .sp-learning-section {
+        padding: 60px 16px 80px;
+    }
+
+    .sp-learning-title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .sp-learning-text {
+        font-size: 14px;
+    }
+
+    .sp-learning-text--bold {
+        margin-bottom: 36px;
+    }
+
+    .sp-learning-btn {
+        font-size: 13px;
+        padding: 14px 36px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.sp-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    font-style: italic;
+    color: #ffffff;
+    margin: 0 0 28px 0;
+    line-height: 1.15;
+}
+
+.sp-title-highlight {
+    background: #27ae60;
+    color: #ffffff;
+    padding: 2px 12px 4px;
+    display: inline;
+    border-radius: 4px;
+    margin-right: 6px;
+}
+
+.sp-perks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.sp-perk-icon {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ── Section wrapper ─────────────────────────────────────────────── */
+.ap-section {
+    padding: 80px 20px 100px;
+}
+
+.sp-hero-section {
+    padding-bottom: 50px;
+}
+
+.sp-cta-section {
+    padding-top: 60px;
+}
+
+.ap-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ── Compare Section wrapper (branco) ────────────────────────── */
+.sp-compare-section {
+    padding: 100px 20px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0 100%);
+}
+
+.sp-compare-inner {
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* ── Hero ────────────────────────────────────────────────────────── */
+.ap-hero {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.ap-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    line-height: 1.15;
+}
+
+.ap-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 auto;
+    line-height: 1.7;
+    max-width: 920px;
+    text-align: center;
+}
+
+.ap-steps-heading {
+    display: none;
+}
+
+/* ── Compare Section ─────────────────────────────────────────────── */
+.sp-compare {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 60px 40px;
+}
+
+.sp-compare-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 36px 32px 120px;
+    flex: 1;
+    max-width: 380px;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.sp-card-old { border: 2px solid #e74c3c; }
+.sp-card-new { border: 2px solid #27ae60; }
+
+.sp-card-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+.sp-label-old { color: #e74c3c; }
+.sp-label-new { color: #27ae60; }
+
+.sp-card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #001134;
+    margin: 0 0 28px 0;
+}
+
+.sp-card-title-new { color: #003399; }
+
+.sp-card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sp-list-item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #222;
+}
+
+.sp-list-item i {
+    font-size: 14px;
+    flex-shrink: 0;
+    width: 18px;
+    text-align: center;
+}
+
+.sp-item-bad i  { color: #e74c3c; }
+.sp-item-good i { color: #27ae60; }
+
+.sp-card-chips {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 160px;
+    pointer-events: none;
+}
+
+.sp-chips-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.sp-compare-arrow {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: #003399;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/* ── Steps (mantidos para compatibilidade) ───────────────────────── */
+.ap-steps { display: none; }
+
+/* ── The Scouting Process ─────────────────────────────── */
+.sp-process-heading {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.sp-process-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+}
+
+.sp-process-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.sp-process-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sp-process-item {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.sp-process-icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.sp-process-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sp-process-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.sp-process-content {
+    flex: 1;
+}
+
+.sp-process-item-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+}
+
+.sp-process-item-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* ── How Sponsorship Works (antigo - manter para compatibilidade) ─── */
+.sp-how-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sp-how-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+}
+
+.sp-how-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+}
+
+.sp-how-steps {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    position: relative;
+}
+
+/* linha horizontal conectando os chips */
+.sp-how-steps::before {
+    content: '';
+    position: absolute;
+    top: 52px;
+    left: calc(12.5% + 24px);
+    right: calc(12.5% + 24px);
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 0;
+}
+
+.sp-how-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.sp-how-chip {
+    position: relative;
+    width: 88px;
+    height: 88px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+.sp-how-chip img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sp-step-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.sp-how-num {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.sp-how-step-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+
+.sp-how-step-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0 0 16px 0;
+    line-height: 1.55;
+    max-width: 180px;
+}
+
+.sp-how-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 2px;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.sp-how-link:hover {
+    color: #93b8ff;
+    border-color: #93b8ff;
+}
+
+/* ── CTA (removido desta página) ───────────────────────────── */
+.ap-cta {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid rgba(83, 140, 255, 0.45);
+    border-radius: 18px;
+    background: rgba(0, 18, 70, 0.55);
+    overflow: hidden;
+    min-height: 180px;
+}
+
+.ap-cta-image {
+    flex-shrink: 0;
+    width: 260px;
+    align-self: stretch;
+    position: relative;
+    overflow: hidden;
+}
+
+.ap-cta-image img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    object-fit: contain;
+    object-position: bottom left;
+}
+
+.ap-cta-body {
+    flex: 1;
+    padding: 40px 48px 40px 24px;
+    text-align: left;
+}
+
+.ap-cta-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: italic;
+    color: #ffffff;
+    margin: 0 0 14px 0;
+    line-height: 1.2;
+}
+
+.ap-cta-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 0 28px 0;
+    line-height: 1.65;
+    max-width: 480px;
+}
+
+.ap-cta-btn {
+    display: inline-block;
+    padding: 14px 36px;
+    background: #c0392b;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.ap-cta-btn:hover {
+    background: #a93226;
+    transform: translateY(-2px);
+    color: #ffffff;
+}
+
+/* ── Responsive ──────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .ap-section {
+        padding: 60px 16px 80px;
+    }
+
+    .sp-compare-section {
+        clip-path: polygon(0 2%, 100% 0%, 100% 98%, 0 100%);
+        padding: 70px 16px;
+    }
+
+    .sp-compare {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .sp-compare-card {
+        max-width: 100%;
+        width: 100%;
+        padding: 28px 24px 100px;
+    }
+
+    .sp-compare-arrow {
+        transform: rotate(90deg);
+    }
+
+    .sp-card-title {
+        font-size: 22px;
+    }
+
+    .sp-scouting-title {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .sp-scouting-text {
+        font-size: 14px;
+    }
+
+    .sp-training-subtitle {
+        font-size: 22px;
+    }
+
+    .sp-training-footer-text {
+        font-size: 14px;
+        margin-top: 40px;
+    }
+
+    .training-skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 24px;
+    }
+
+    .training-section-title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .training-section-text {
+        font-size: 14px;
+    }
+
+    .training-academy-btn {
+        font-size: 13px;
+        padding: 14px 36px;
+    }
+
+    .mentorship-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .mentorship-benefit-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .mentorship-benefit-icon img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mentorship-benefit-text {
+        font-size: 13px;
+    }
+
+    .sp-title {
+        font-size: 32px;
+    }
+
+    .sp-perks {
+        font-size: 13px;
+        gap: 8px 12px;
+    }
+
+    .ap-step {
+        gap: 20px;
+    }
+
+    .ap-chip {
+        width: 62px;
+        height: 62px;
+    }
+
+    .ap-step-title {
+        font-size: 15px;
+    }
+
+    .sp-how-steps {
+        flex-wrap: wrap;
+        gap: 40px 0;
+    }
+
+    .sp-how-steps::before {
+        display: none;
+    }
+
+    .sp-how-step {
+        flex: 0 0 50%;
+    }
+
+    .sp-how-title {
+        font-size: 28px;
+    }
+
+    .sp-process-title {
+        font-size: 28px;
+    }
+
+    .sp-process-subtitle {
+        font-size: 14px;
+    }
+
+    .sp-process-list {
+        gap: 30px;
+    }
+
+    .sp-process-item {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sp-process-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .sp-process-number {
+        font-size: 28px;
+    }
+
+    .sp-process-item-title {
+        font-size: 18px;
+    }
+
+    .sp-process-item-desc {
+        font-size: 13px;
+    }
+}
+
+/* ── The Deal - Simple Math Section ────────────────────────────── */
+.sp-deal-section {
+    padding: 80px 20px 100px;
+    background: linear-gradient(180deg, #001134 0%, #001845 100%);
+}
+
+.sp-deal-heading {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.sp-deal-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+}
+
+.sp-deal-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+}
+
+.sp-deal-table-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.sp-deal-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: transparent;
+}
+
+.sp-deal-table thead tr {
+    background: transparent;
+}
+
+.sp-table-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 20px 24px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+}
+
+.sp-header-scenario {
+    background: linear-gradient(180deg, #1E40AF 0%, #3B82F6 100%);
+    border-radius: 12px 0 0 0;
+    text-align: left;
+    width: 35%;
+    color: #ffffff;
+}
+
+.sp-header-win {
+    background: linear-gradient(180deg, #1E40AF 0%, #3B82F6 100%);
+    width: 20%;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.4);
+}
+
+.sp-header-lose {
+    background: linear-gradient(180deg, #1E40AF 0%, #3B82F6 100%);
+    border-radius: 0 12px 0 0;
+    width: 25%;
+}
+
+.sp-deal-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.sp-deal-table tbody tr:first-child .sp-table-cell {
+    border-top: none;
+}
+
+/* Primeira linha da coluna You Win - adiciona borda superior */
+.sp-deal-table tbody tr:first-child td:nth-child(2) {
+    border-top: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.sp-table-cell {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 18px 24px;
+    background: #ffffff;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    vertical-align: middle;
+}
+
+/* Coluna You Win com elevação */
+.sp-deal-table tbody tr td:nth-child(2) {
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.3);
+    border-left: 1px solid rgba(59, 130, 246, 0.3);
+    border-right: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.sp-cell-label {
+    color: #001134;
+    font-weight: 400;
+    text-align: left;
+}
+
+.sp-label-bold {
+    font-weight: 700;
+}
+
+.sp-cell-value {
+    color: #001134;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sp-value-highlight {
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.sp-value-final {
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.sp-table-row-final .sp-table-cell {
+    background: #ffffff;
+    border-top: 2px solid rgba(83, 140, 255, 0.3);
+}
+
+/* Última linha da coluna You Win */
+.sp-deal-table tbody tr:last-child td:nth-child(2) {
+    border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.sp-deal-table tbody tr:last-child .sp-cell-label {
+    border-radius: 0 0 0 12px;
+}
+
+.sp-deal-table tbody tr:last-child td:last-child {
+    border-radius: 0 0 12px 0;
+}
+
+/* ── Barriers Grid (Why Great Players Don't Get Discovered) ────── */
+.sp-barriers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+.sp-barrier-card {
+    background: rgba(0, 18, 70, 0.4);
+    border: 2px solid rgba(83, 140, 255, 0.4);
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.sp-barrier-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(83, 140, 255, 0.7);
+}
+
+.sp-barrier-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    line-height: 1.4;
+}
+
+.sp-barrier-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}
+
+.sp-solution-box {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(0, 18, 70, 0.3);
+    border: 2px solid rgba(83, 140, 255, 0.5);
+    border-radius: 12px;
+    padding: 36px 40px;
+    text-align: center;
+}
+
+.sp-solution-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    line-height: 1.3;
+}
+
+.sp-solution-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}
+
+/* ── The Advantage of Sponsored Players Section ────────────────── */
+.sp-advantages-section {
+    padding: 80px 20px 100px;
+    background: linear-gradient(180deg, #001134 0%, #001845 100%);
+}
+
+.sp-advantages-heading {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.sp-advantages-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+}
+
+.sp-advantages-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+}
+
+.sp-advantages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+.sp-advantage-item {
+    text-align: left;
+}
+
+.sp-advantage-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+    line-height: 1.4;
+}
+
+.sp-advantage-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}
+
+.sp-advantage-highlight {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(0, 18, 70, 0.3);
+    border: 2px solid rgba(83, 140, 255, 0.5);
+    border-radius: 12px;
+    padding: 36px 40px;
+    text-align: center;
+}
+
+.sp-advantage-highlight-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* ── A Balanced Approach to Scouting Section ────────────────── */
+.sp-balanced-section {
+    padding: 80px 20px 100px;
+    background: linear-gradient(180deg, #001134 0%, #001845 100%);
+}
+
+.sp-balanced-heading {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.sp-balanced-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+}
+
+.sp-balanced-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+}
+
+.sp-balanced-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+.sp-balanced-card {
+    background: rgba(0, 18, 70, 0.4);
+    border: 2px solid rgba(83, 140, 255, 0.4);
+    border-radius: 12px;
+    padding: 32px 28px;
+    text-align: left;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.sp-balanced-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(83, 140, 255, 0.7);
+}
+
+.sp-balanced-card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    line-height: 1.4;
+}
+
+.sp-balanced-card-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}
+
+.sp-balanced-highlight {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(0, 18, 70, 0.3);
+    border: 2px solid rgba(83, 140, 255, 0.5);
+    border-radius: 12px;
+    padding: 36px 40px;
+    text-align: center;
+}
+
+.sp-balanced-highlight-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* ── The Quest is On Section ────────────────────────────────── */
+.sp-quest-section {
+    padding: 80px 20px 100px;
+    background: linear-gradient(180deg, #001134 0%, #001845 100%);
+}
+
+.sp-quest-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border: 2px solid rgba(83, 140, 255, 0.5);
+    border-radius: 16px;
+    background: rgba(0, 18, 70, 0.3);
+    overflow: hidden;
+    min-height: 400px;
+    padding: 0;
+}
+
+.sp-quest-image {
+    flex-shrink: 0;
+    width: 380px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.sp-quest-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: bottom center;
+}
+
+.sp-quest-content {
+    flex: 1;
+    padding: 50px 50px 50px 0;
+    text-align: left;
+}
+
+.sp-quest-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    font-style: italic;
+    color: #ffffff;
+    margin: 0 0 24px 0;
+    line-height: 1.2;
+}
+
+.sp-quest-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 20px 0;
+}
+
+.sp-quest-text:last-of-type {
+    margin-bottom: 32px;
+}
+
+.sp-quest-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: #D70E09;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(215, 14, 9, 0.3);
+}
+
+.sp-quest-btn:hover {
+    background: #b00c08;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(215, 14, 9, 0.4);
+    color: #ffffff;
+}
+
+/* ── Sponsorship Benefits Section ────────────────────────────── */
+.sp-benefits-section {
+    padding: 80px 20px 100px;
+    background: linear-gradient(180deg, #001134 0%, #001845 100%);
+}
+
+.sp-benefits-section .ap-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sp-benefits-heading {
+    text-align: center;
+    margin-bottom: 60px;
+    display: inline-block;
+    padding: 20px 100px;
+    border: 2px solid rgba(83, 140, 255, 0.5);
+    border-radius: 8px;
+    background: rgba(0, 51, 153, 0.15);
+}
+
+.sp-benefits-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+}
+
+.sp-benefits-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+}
+
+.sp-benefits-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.sp-benefit-card {
+    background: rgba(0, 18, 70, 0.6);
+    border: 2px solid rgba(83, 140, 255, 0.5);
+    border-radius: 12px;
+    padding: 40px 32px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sp-benefit-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(83, 140, 255, 0.8);
+    box-shadow: 0 8px 25px rgba(83, 140, 255, 0.3);
+}
+
+.sp-benefit-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.sp-benefit-icon i {
+    font-size: 28px;
+    color: #c0392b;
+}
+
+.sp-benefit-icon .benefit-icon-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.sp-benefit-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+}
+
+.sp-benefit-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+}
+
+/* ── Two Paths to Professional Sponsorship Section ──────────────── */
+.sp-paths-section {
+    padding: 100px 20px 80px;
+    background: #ffffff;
+    position: relative;
+    clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 100%);
+}
+
+.sp-paths-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #001134;
+    text-align: center;
+    margin: 0 0 70px 0;
+    line-height: 1.2;
+}
+
+.sp-paths-cards {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    position: relative;
+    min-height: 380px;
+}
+
+.sp-path-card {
+    flex: 1;
+    max-width: 420px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.sp-path-left .sp-path-inner {
+    background: linear-gradient(135deg, #001845 0%, #003399 100%);
+    transform: perspective(600px) rotateY(5deg);
+    box-shadow: -15px 20px 40px rgba(0, 24, 69, 0.4);
+}
+
+.sp-path-right .sp-path-inner {
+    background: linear-gradient(135deg, #003399 0%, #001845 100%);
+    transform: perspective(600px) rotateY(-5deg);
+    box-shadow: 15px 20px 40px rgba(0, 24, 69, 0.4);
+}
+
+.sp-path-inner {
+    padding: 48px 40px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sp-path-card:hover .sp-path-inner {
+    transform: perspective(600px) rotateY(0deg) translateY(-8px);
+    box-shadow: 0 25px 50px rgba(0, 24, 69, 0.5);
+}
+
+.sp-path-card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+
+.sp-path-card-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 32px 0;
+    line-height: 1.7;
+}
+
+.sp-path-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    transition: border-color 0.3s ease, gap 0.3s ease;
+}
+
+.sp-path-link:hover {
+    border-color: rgba(255, 255, 255, 0.8);
+    gap: 12px;
+}
+
+/* ── Featured Players Section ──────────────────────────────────── */
+.featured-players-section {
+    width: 100vw;
+    background: #FFFFFF;
+    padding: 80px 64px 100px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.featured-players-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.featured-players-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
+    margin: 0 0 60px 0;
+}
+
+.players-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    flex: 1;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+.player-card {
+    min-width: calc((100% - 60px) / 4);
+    aspect-ratio: 3/4;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.player-card:hover {
+    transform: scale(1.05);
+}
+
+.player-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.player-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 19, 61, 0.95), transparent);
+    padding: 24px 20px;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+.player-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin: 0 0 8px 0;
+}
+
+.player-quote {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-style: italic;
+}
+
+.carousel-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #00133D;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+    background: #D70E09;
+    transform: scale(1.1);
+}
+
+.carousel-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* ── FAQ Section ──────────────────────────────────────────────────── */
+.faq-section {
+    width: 100vw;
+    padding: 100px 64px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0 0 16px 0;
+    text-shadow: 0px 4px 24px rgba(215, 14, 9, 0.3);
+}
+
+.faq-category {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 0 48px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 28px;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.faq-question span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    flex: 1;
+}
+
+.faq-toggle {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.faq-item:hover .faq-toggle {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 28px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+    padding: 0 28px 24px 28px;
+}
+
+.faq-answer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}
+
+.faq-item.active .faq-toggle {
+    background: rgba(215, 14, 9, 0.2);
+    border-color: #D70E09;
+    transform: rotate(45deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sp-deal-section {
+        padding: 60px 16px 80px;
+    }
+
+    .sp-deal-title {
+        font-size: 28px;
+    }
+
+    .sp-deal-subtitle {
+        font-size: 14px;
+    }
+
+    .sp-barriers-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 30px;
+    }
+
+    .sp-barrier-card {
+        padding: 28px 20px;
+    }
+
+    .sp-barrier-title {
+        font-size: 13px;
+    }
+
+    .sp-barrier-desc {
+        font-size: 13px;
+    }
+
+    .sp-solution-box {
+        padding: 28px 24px;
+    }
+
+    .sp-solution-title {
+        font-size: 16px;
+    }
+
+    .sp-solution-desc {
+        font-size: 14px;
+    }
+
+    .sp-advantages-section {
+        padding: 60px 16px 80px;
+    }
+
+    .sp-advantages-title {
+        font-size: 28px;
+    }
+
+    .sp-advantages-subtitle {
+        font-size: 14px;
+    }
+
+    .sp-advantages-list {
+        gap: 24px;
+        margin-bottom: 30px;
+    }
+
+    .sp-advantage-title {
+        font-size: 14px;
+    }
+
+    .sp-advantage-desc {
+        font-size: 14px;
+    }
+
+    .sp-advantage-highlight {
+        padding: 28px 24px;
+    }
+
+    .sp-advantage-highlight-text {
+        font-size: 15px;
+    }
+
+    .sp-balanced-section {
+        padding: 60px 16px 80px;
+    }
+
+    .sp-balanced-title {
+        font-size: 28px;
+    }
+
+    .sp-balanced-subtitle {
+        font-size: 14px;
+    }
+
+    .sp-balanced-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 30px;
+    }
+
+    .sp-balanced-card {
+        padding: 28px 24px;
+    }
+
+    .sp-balanced-card-title {
+        font-size: 14px;
+    }
+
+    .sp-balanced-card-desc {
+        font-size: 13px;
+    }
+
+    .sp-balanced-highlight {
+        padding: 28px 24px;
+    }
+
+    .sp-balanced-highlight-text {
+        font-size: 15px;
+    }
+
+    .sp-quest-section {
+        padding: 60px 16px 80px;
+    }
+
+    .sp-quest-wrapper {
+        flex-direction: column;
+        padding: 0;
+        min-height: auto;
+    }
+
+    .sp-quest-image {
+        width: 100%;
+        height: 300px;
+        padding: 20px;
+    }
+
+    .sp-quest-image img {
+        max-height: 280px;
+    }
+
+    .sp-quest-content {
+        padding: 0 28px 40px 28px;
+    }
+
+    .sp-quest-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .sp-quest-text {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .sp-quest-text:last-of-type {
+        margin-bottom: 28px;
+    }
+
+    .sp-quest-btn {
+        font-size: 13px;
+        padding: 12px 28px;
+    }
+
+    .sp-deal-table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .sp-table-header {
+        font-size: 14px;
+        padding: 14px 12px;
+    }
+
+    .sp-table-cell {
+        font-size: 13px;
+        padding: 14px 12px;
+    }
+
+    .sp-value-highlight {
+        font-size: 15px;
+    }
+
+    .sp-value-final {
+        font-size: 16px;
+    }
+
+    .sp-benefits-section {
+        padding: 60px 16px 80px;
+    }
+
+    .sp-benefits-heading {
+        padding: 16px 30px;
+    }
+
+    .sp-benefits-title {
+        font-size: 28px;
+    }
+
+    .sp-benefits-subtitle {
+        font-size: 14px;
+    }
+
+    .sp-benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .sp-benefit-card {
+        padding: 32px 24px;
+    }
+
+    .sp-benefit-icon {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 20px;
+    }
+
+    .sp-benefit-icon i {
+        font-size: 24px;
+    }
+
+    .sp-benefit-title {
+        font-size: 14px;
+    }
+
+    .sp-benefit-desc {
+        font-size: 13px;
+    }
+
+    .sp-paths-section {
+        padding: 70px 16px 60px;
+        clip-path: polygon(0 2%, 100% 0%, 100% 100%, 0 100%);
+    }
+
+    .sp-paths-title {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .sp-paths-cards {
+        flex-direction: column;
+        gap: 30px;
+        min-height: auto;
+    }
+
+    .sp-path-card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .sp-path-left .sp-path-inner,
+    .sp-path-right .sp-path-inner {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 10px 30px rgba(0, 24, 69, 0.3);
+    }
+
+    .sp-path-inner {
+        padding: 36px 28px;
+        min-height: auto;
+    }
+
+    .sp-path-card-title {
+        font-size: 22px;
+    }
+
+    .sp-path-card-desc {
+        font-size: 14px;
+    }
+
+    .sp-path-link {
+        font-size: 13px;
+    }
+
+    .featured-players-section {
+        padding: 60px 20px 80px;
+    }
+
+    .featured-players-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .player-card {
+        min-width: calc((100% - 20px) / 2);
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .player-card {
+        min-width: calc((100% - 40px) / 3);
+    }
+}
+
+@media (max-width: 992px) {
+    .sp-barriers-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sp-scouting-title {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .sp-scouting-text {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .sp-training-subtitle {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .sp-training-footer-text {
+        font-size: 13px;
+        line-height: 1.7;
+        margin-top: 40px;
+    }
+
+    .training-skills-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 40px;
+        padding: 0 10px;
+    }
+
+    .training-section-title {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .training-section-text {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .training-academy-btn {
+        font-size: 12px;
+        padding: 12px 32px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .training-cta-wrapper {
+        margin-top: 32px;
+    }
+
+    .mentorship-benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 40px;
+        padding: 0 10px;
+    }
+
+    .mentorship-benefit-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mentorship-benefit-icon img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mentorship-benefit-text {
+        font-size: 13px;
+    }
+
+    .sp-process-title {
+        font-size: 24px;
+    }
+
+    .sp-process-subtitle {
+        font-size: 13px;
+    }
+
+    .sp-process-list {
+        gap: 25px;
+    }
+
+    .sp-process-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .sp-process-number {
+        font-size: 24px;
+    }
+
+    .sp-process-item-title {
+        font-size: 16px;
+    }
+
+    .sp-process-item-desc {
+        font-size: 12px;
+    }
+
+    .sp-barrier-title {
+        font-size: 12px;
+    }
+
+    .sp-barrier-desc {
+        font-size: 12px;
+    }
+
+    .sp-solution-title {
+        font-size: 15px;
+    }
+
+    .sp-solution-desc {
+        font-size: 13px;
+    }
+
+    .sp-advantages-title {
+        font-size: 24px;
+    }
+
+    .sp-advantages-subtitle {
+        font-size: 13px;
+    }
+
+    .sp-advantages-list {
+        gap: 20px;
+    }
+
+    .sp-advantage-title {
+        font-size: 13px;
+    }
+
+    .sp-advantage-desc {
+        font-size: 13px;
+    }
+
+    .sp-advantage-highlight {
+        padding: 24px 20px;
+    }
+
+    .sp-advantage-highlight-text {
+        font-size: 14px;
+    }
+
+    .sp-balanced-title {
+        font-size: 24px;
+    }
+
+    .sp-balanced-subtitle {
+        font-size: 13px;
+    }
+
+    .sp-balanced-grid {
+        gap: 16px;
+    }
+
+    .sp-balanced-card {
+        padding: 24px 20px;
+    }
+
+    .sp-balanced-card-title {
+        font-size: 13px;
+    }
+
+    .sp-balanced-card-desc {
+        font-size: 12px;
+    }
+
+    .sp-balanced-highlight {
+        padding: 24px 20px;
+    }
+
+    .sp-balanced-highlight-text {
+        font-size: 14px;
+    }
+
+    .sp-quest-title {
+        font-size: 28px;
+    }
+
+    .sp-quest-text {
+        font-size: 13px;
+    }
+
+    .sp-quest-image {
+        height: 250px;
+        padding: 15px;
+    }
+
+    .sp-quest-image img {
+        max-height: 230px;
+    }
+
+    .sp-quest-content {
+        padding: 0 20px 32px 20px;
+    }
+
+    .sp-quest-btn {
+        font-size: 12px;
+        padding: 11px 24px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .player-card {
+        min-width: 100%;
+    }
+
+    .featured-players-title {
+        font-size: 28px;
+    }
+
+    .faq-section {
+        padding: 80px 20px;
+    }
+
+    .faq-title {
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+
+    .faq-category {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .faq-question {
+        padding: 20px;
+    }
+
+    .faq-question span {
+        font-size: 15px;
+    }
+
+    .faq-toggle {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .faq-answer p {
+        font-size: 13px;
+    }
+}

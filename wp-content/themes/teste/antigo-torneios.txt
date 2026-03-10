@@ -1,0 +1,630 @@
+<?php
+/**
+ * Template Name: Desafios
+ * Description: Página de desafios e conta do usuário
+ */
+
+get_header();
+?>
+
+<!-- Main Content -->
+<main class="main-content challenges-page">
+    <div class="container">
+        <!-- Challenge Section -->
+        <div class="challenge-section-cards">
+            <div class="challenge-card-text">
+                <h2 class="challenge-card-title">Next Poker Challenge</h2>
+                <div class="countdown-timer">
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="days">5</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <span class="countdown-separator">:</span>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="hours">20</span>
+                        <span class="countdown-label">Hrs</span>
+                    </div>
+                    <span class="countdown-separator">:</span>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="minutes">27</span>
+                        <span class="countdown-label">Min</span>
+                    </div>
+                    <span class="countdown-separator">:</span>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="seconds">56</span>
+                        <span class="countdown-label">Sec</span>
+                    </div>
+                </div>
+                <button class="btn-register-challenge">Take me there</button>
+            </div>
+            <div class="challenge-banner-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/imagens/banner2.png" alt="Tournament Details" class="tournament-banner">
+            </div>
+        </div>
+
+        <!-- My Account Section -->
+        <div class="my-account-section">
+            <div class="account-header">
+                <h2 class="account-title">My Account</h2>
+                <div class="membership-info">
+                    <img src="<?php echo get_template_directory_uri(); ?>/imagens/icon1.png" alt="Membership Icon" class="membership-icon">
+                    <div class="membership-text">
+                        <span class="membership-type">Silver membership</span>
+                        <span class="membership-date">Renews on Nov 30, 2025</span>
+                    </div>
+                    <button class="btn-upgrade">Upgrade plan</button>
+                </div>
+            </div>
+
+            <div class="account-tabs">
+                <button class="account-tab active" onclick="switchAccountTab('challenges')">Challenges</button>
+                <button class="account-tab" onclick="switchAccountTab('billing')">Billing</button>
+                <button class="account-tab" onclick="switchAccountTab('affiliation')">Affiliation</button>
+                <button class="account-tab" onclick="switchAccountTab('settings')">Settings</button>
+            </div>
+
+            <!-- Challenges Tab Content -->
+            <div class="tab-content active" id="challengesTab">
+                <div class="challenge-history">
+                <h3 class="history-title">Challenge History</h3>
+                <div class="history-list">
+                    <?php
+                    $history_items = [
+                        ['date' => 'Sep 28 2025', 'description' => 'Second table entry ticket', 'has_button' => true],
+                        ['date' => 'Sep 27 2025', 'description' => 'Free challenge entry for new registrants.', 'has_button' => false],
+                        ['date' => 'Sep 26 2025', 'description' => 'Free challenge entry for new registrants.', 'has_button' => false],
+                        ['date' => 'Sep 25 2025', 'description' => 'Free challenge entry for new registrants.', 'has_button' => false],
+                        ['date' => 'Sep 28 2025', 'description' => 'Free challenge entry for new registrants.', 'has_button' => false],
+                        ['date' => 'Sep 28 2025', 'description' => 'Free challenge entry for new registrants.', 'has_button' => false],
+                        ['date' => 'Sep 28 2025', 'description' => 'Free challenge entry for new registrants.', 'has_button' => true],
+                        ['date' => 'Sep 28 2025', 'description' => 'Free challenge entry for new registrants.', 'has_button' => false],
+                        ['date' => 'Sep 28 2025', 'description' => 'Free challenge entry for new registrants.', 'has_button' => false],
+                        ['date' => 'Sep 28 2025', 'description' => 'Free challenge entry for new registrants.', 'has_button' => false],
+                        ['date' => 'Sep 28 2025', 'description' => 'Free challenge entry for new registrants.', 'has_button' => false],
+                        ['date' => 'Sep 28 2025', 'description' => 'Free challenge entry for new registrants.', 'has_button' => false],
+                        ['date' => 'Sep 28 2025', 'description' => 'Free challenge entry for new registrants.', 'has_button' => true],
+                        ['date' => 'Sep 28 2025', 'description' => 'Free challenge entry for new registrants.', 'has_button' => false],
+                    ];
+                    
+                    foreach ($history_items as $item): ?>
+                        <div class="history-item">
+                            <span class="history-date"><?php echo esc_html($item['date']); ?></span>
+                            <span class="history-description"><?php echo esc_html($item['description']); ?></span>
+                            <?php if ($item['has_button']): ?>
+                                <button class="btn-go"><i class="fas fa-arrow-right"></i></button>
+                            <?php endif; ?>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <span class="page-dots">...</span>
+                    <button class="page-btn">6</button>
+                    <button class="page-btn">7</button>
+                    <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            </div>
+
+            <!-- Affiliation Tab Content -->
+            <div class="tab-content" id="affiliationTab">
+                <!-- Stats Section -->
+                <div class="affiliation-stats-top">
+                    <div class="stat-card-top">
+                        <div class="stat-number-large">12</div>
+                        <div class="stat-label-large">Total<br>Referrals</div>
+                    </div>
+                    <div class="stat-card-top">
+                        <div class="stat-number-large">+10</div>
+                        <div class="stat-label-large">Earned<br>Credits</div>
+                    </div>
+                    <div class="stat-card-top">
+                        <div class="stat-number-large">2</div>
+                        <div class="stat-label-large">Pending<br>Credits</div>
+                    </div>
+                </div>
+
+                <!-- Referral Link Section -->
+                <div class="affiliation-link-section">
+                    <div class="affiliation-unified-container">
+                        <div class="referral-link-row">
+                            <input type="text" class="referral-link-input" id="referralLink" value="https://preview---poker111-ascent-2d25c15e.base44.app/refister??ref=GROSANNA06847483G23" readonly>
+                            <button class="btn-copy-link" onclick="copyReferralLink()">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="share-container">
+                            <button class="btn-share">Share</button>
+                            <div class="share-social-icons-inline">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-x-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-discord"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How it Works Section -->
+                <div class="how-it-works-section">
+                    <h3 class="section-title">How it Works</h3>
+                    <div class="steps-container">
+                        <div class="work-step">
+                            <div class="step-icon-circle">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Step 1</div>
+                                <div class="step-description">Share your referral link with others</div>
+                            </div>
+                        </div>
+                        
+                        <div class="step-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="work-step">
+                            <div class="step-icon-circle">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Step 2</div>
+                                <div class="step-description">They register using link & create an account</div>
+                            </div>
+                        </div>
+                        
+                        <div class="step-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="work-step">
+                            <div class="step-icon-circle">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-number">Step 3</div>
+                                <div class="step-description">Earn 2 credits for each successful referral</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Referral History Section -->
+                <div class="referral-history-section">
+                    <h3 class="section-title">Referral History</h3>
+                    <p class="section-description">Description</p>
+                    
+                    <div class="referral-empty-state">
+                        <div class="empty-state-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <h4 class="empty-state-title">No Referrals Yet</h4>
+                        <p class="empty-state-description">Start sharing your link and earn 2 credits for every friend who joins.<br>It's that simple.</p>
+                        <button class="btn-copy-my-link" onclick="copyReferralLink()">
+                            Copy My Link
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Settings Tab Content -->
+            <div class="tab-content" id="settingsTab">
+                <!-- Personal Information -->
+                <div class="settings-section">
+                    <h3 class="settings-title">Personal Information</h3>
+                    <div class="personal-info-content">
+                        <div class="profile-avatar-section">
+                            <div class="avatar-frame">
+                                <div class="profile-avatar-large">
+                                    <div class="avatar-background"></div>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/imagens/avatares/avatar1.png" alt="Profile Avatar" class="avatar-img">
+                                </div>
+                                <button class="edit-avatar-btn" onclick="openAvatarModal()"><i class="fas fa-pencil-alt"></i></button>
+                                <div class="avatar-badge">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/imagens/icon2.png" alt="Badge" class="badge-icon">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-fields-grid">
+                            <div class="info-field">
+                                <div class="field-header">
+                                    <label class="field-label">Nickname</label>
+                                    <button class="edit-field-btn" onclick="openNicknameModal()"><i class="fas fa-pencil-alt"></i></button>
+                                </div>
+                                <span class="field-value" id="nicknameDisplay">Jane111</span>
+                            </div>
+                            
+                            <div class="info-field">
+                                <div class="field-header">
+                                    <label class="field-label">Phone</label>
+                                    <button class="edit-field-btn" onclick="openPhoneModal()"><i class="fas fa-pencil-alt"></i></button>
+                                </div>
+                                <span class="field-value" id="phoneDisplay">+1 543 543 54 43</span>
+                            </div>
+                            
+                            <div class="info-field">
+                                <div class="field-header">
+                                    <label class="field-label">Full Name</label>
+                                    <button class="btn-contact-edit" onclick="openContactModal()">Contact Us To Edit</button>
+                                </div>
+                                <span class="field-value">Jane Austin</span>
+                            </div>
+                            
+                            <div class="info-field">
+                                <div class="field-header">
+                                    <label class="field-label">E-mail</label>
+                                    <button class="btn-contact-edit" onclick="openContactModal()">Contact Us To Edit</button>
+                                </div>
+                                <span class="field-value">austin.jane@email.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subscription -->
+                <div class="settings-section">
+                    <h3 class="settings-title">Subscription</h3>
+                    <div class="subscription-content">
+                        <div class="subscription-info-box">
+                            <img src="<?php echo get_template_directory_uri(); ?>/imagens/icon1.png" alt="Silver Icon" class="subscription-icon">
+                            <div class="subscription-details">
+                                <h4 class="subscription-name">SILVER POKER MEMBERSHIP</h4>
+                                <p class="subscription-description">This is your active subscription plan</p>
+                                <p class="subscription-date">Sep 30, 2022 - Today</p>
+                            </div>
+                        </div>
+                        <div class="subscription-actions">
+                            <button class="btn-cancel-subscription">Cancel Subscription</button>
+                            <button class="btn-upgrade-subscription">Upgrade Plan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Methods -->
+                <div class="settings-section">
+                    <h3 class="settings-title">Payment Methods</h3>
+                    <div class="payment-methods-content">
+                        <div class="payment-card-info">
+                            <div class="card-brand">
+                                <i class="fab fa-cc-visa"></i>
+                            </div>
+                            <div class="card-details">
+                                <p class="card-number">Visa •••• 4253</p>
+                                <p class="card-expiry">Expires 12/2026</p>
+                            </div>
+                        </div>
+                        <div class="payment-methods-actions">
+                            <button class="payment-method-icon"><i class="fab fa-cc-paypal"></i></button>
+                            <button class="payment-method-icon"><i class="fab fa-cc-mastercard"></i></button>
+                            <button class="btn-change-payment">Change Payment Method</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Delete Account -->
+                <div class="settings-section">
+                    <button class="btn-delete-account">Delete Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-top-bar">
+            <img src="<?php echo get_template_directory_uri(); ?>/imagens/logopoker.png" alt="POKER III" class="modal-logo">
+            <button class="modal-close" onclick="closeLoginModal()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="modal-header">
+            <h2 class="modal-title" id="modalTitle">Welcome</h2>
+            <p class="modal-subtitle" id="modalSubtitle">Fill in the fields to continue registration</p>
+        </div>
+        
+        <div class="modal-tabs">
+            <button class="tab-btn active" id="loginTab" onclick="switchTab('login')">Login</button>
+            <button class="tab-btn" id="signupTab" onclick="switchTab('signup')">Sign Up</button>
+        </div>
+        
+        <form class="modal-form" id="loginForm">
+            <div class="form-group">
+                <input type="email" class="form-input" id="loginEmail" placeholder="|Email" required oninput="checkFormFilled('login')">
+            </div>
+            
+            <div class="form-group password-group">
+                <input type="password" class="form-input" id="loginPassword" placeholder="Password" required oninput="checkFormFilled('login')">
+                <button type="button" class="toggle-password" onclick="togglePassword('loginPassword')">
+                    <i class="fas fa-eye"></i>
+                </button>
+            </div>
+            
+            <a href="#" class="forgot-password" onclick="showForgotPassword(event)">Forgot Your Password?</a>
+            
+            <button type="submit" class="btn-continue" id="loginContinue" disabled>Continue</button>
+            
+            <div class="divider">
+                <span>Or</span>
+            </div>
+            
+            <button type="button" class="btn-google">
+                <i class="fab fa-google"></i> Continue with Google
+            </button>
+        </form>
+        
+        <form class="modal-form" id="signupForm" style="display: none;">
+            <div class="form-group">
+                <input type="email" class="form-input" id="signupEmail" placeholder="|Email" required>
+            </div>
+            
+            <div class="form-group password-group password-group-signup">
+                <input type="password" class="form-input" id="signupPassword" placeholder="Password" required oninput="validatePassword(this.value);">
+                <button type="button" class="toggle-password" onclick="togglePassword('signupPassword')">
+                    <i class="fas fa-eye"></i>
+                </button>
+            </div>
+            
+            <div class="password-requirements" id="passwordRequirements">
+                <p class="requirements-title">Your password must contain at least</p>
+                <div class="requirement" id="uppercaseReq">
+                    <i class="fas fa-times"></i>
+                    <span>1 uppercase letter</span>
+                </div>
+                <div class="requirement" id="lengthReq">
+                    <i class="fas fa-times"></i>
+                    <span>8 characters</span>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn-continue" id="signupContinue">Continue</button>
+            
+            <div class="divider">
+                <span>Or</span>
+            </div>
+            
+            <button type="button" class="btn-google">
+                <i class="fab fa-google"></i> Continue with Google
+            </button>
+            
+            <p class="terms-text">By creating an account you agree to domain.com's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+        </form>
+        
+        <form class="modal-form" id="forgotPasswordForm" style="display: none;">
+            <div class="form-group">
+                <input type="email" class="form-input" id="forgotEmail" placeholder="Enter your email" required>
+            </div>
+            
+            <a href="#" class="forgot-password" id="backToLogin" onclick="backToLogin(event)">Back to Login</a>
+            
+            <button type="submit" class="btn-continue" id="sendEmailBtn">Send Email</button>
+        </form>
+        
+        <form class="modal-form" id="signupDetailsForm" style="display: none;">
+            <div class="form-group">
+                <input type="text" class="form-input" id="firstName" placeholder="First Name" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="text" class="form-input" id="lastName" placeholder="Last Name" required>
+            </div>
+            
+            <div class="form-group phone-group">
+                <select class="country-code-select" id="countryCode" onchange="updatePhonePlaceholder()">
+                    <option value="+380">+380</option>
+                    <option value="+1">+1</option>
+                    <option value="+44">+44</option>
+                    <option value="+55" selected>+55</option>
+                    <option value="+351">+351</option>
+                </select>
+                <input type="tel" class="form-input phone-input" id="phoneNumber" placeholder="(11) 94993-1617" maxlength="16" required oninput="formatPhoneNumber()">
+            </div>
+            
+            <a href="#" class="forgot-password" id="backToSignup" onclick="backToSignup(event)">Back</a>
+            
+            <button type="submit" class="btn-continue" id="detailsContinue">Continue</button>
+        </form>
+        
+        <form class="modal-form" id="phoneVerificationForm" style="display: none;">
+            <p class="verification-phone" id="verificationPhone">+357 999 99 99</p>
+            
+            <p class="verification-instruction" id="verificationInstruction">
+                Please enter the code below to confirm your phone number. Make sure to keep this window open while you check your phone. The code may take up to 10 minutes to arrive.
+            </p>
+            
+            <div class="form-group">
+                <input type="text" class="form-input code-input" id="verificationCode" placeholder="— — — —" maxlength="4" pattern="[0-9]{4}" required oninput="formatCodeInput()">
+            </div>
+            
+            <button type="button" class="btn-resend" id="resendBtn" disabled>Resend in 118 sec...</button>
+            
+            <a href="#" class="forgot-password" id="changePhoneNumber" onclick="changePhoneNumber(event)">Change phone number</a>
+        </form>
+        
+        <div class="modal-form" id="almostDoneScreen" style="display: none;">
+            <p class="almost-done-text">
+                <span id="almostDoneSubtitle1">Thanks for confirming your email! You're almost there - just a quick</span>
+                <span id="almostDoneSubtitle2">step left to unlock all the awesome benefits we offer.</span>
+            </p>
+            
+            <p class="almost-done-help" id="almostDoneHelp">Help us out by taking a short screening questionnaire.</p>
+            
+            <div class="almost-done-buttons">
+                <button type="button" class="btn-ask-later" id="askLaterBtn" onclick="askMeLater()">Ask me later</button>
+                <button type="button" class="btn-lets-go" id="letsGoBtn" onclick="letsGo()">Let's go</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Avatar Modal -->
+<div id="avatarModal" class="modal avatar-modal">
+    <div class="modal-content avatar-modal-content">
+        <div class="modal-top-bar">
+            <img src="<?php echo get_template_directory_uri(); ?>/imagens/logopoker.png" alt="POKER III" class="modal-logo">
+            <button class="modal-close" onclick="closeAvatarModal()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="modal-header">
+            <h2 class="modal-title">Change Avatar</h2>
+            <p class="modal-subtitle">It will be visible for other users</p>
+        </div>
+        
+        <div class="avatar-grid">
+            <?php for ($i = 1; $i <= 12; $i++): ?>
+                <div class="avatar-option" onclick="selectAvatar('avatar<?php echo $i; ?>.png')">
+                    <img src="<?php echo get_template_directory_uri(); ?>/imagens/avatares/avatar<?php echo $i; ?>.png" alt="Avatar <?php echo $i; ?>">
+                </div>
+            <?php endfor; ?>
+        </div>
+        
+        <div class="avatar-modal-actions">
+            <button class="btn-close-modal" onclick="closeAvatarModal()">Close</button>
+            <button class="btn-save-avatar" onclick="saveAvatar()">Save changes</button>
+        </div>
+    </div>
+</div>
+
+<!-- Nickname Modal -->
+<div id="nicknameModal" class="modal nickname-modal">
+    <div class="modal-content nickname-modal-content">
+        <div class="modal-top-bar">
+            <img src="<?php echo get_template_directory_uri(); ?>/imagens/logopoker.png" alt="POKER III" class="modal-logo">
+            <button class="modal-close" onclick="closeNicknameModal()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="modal-header">
+            <h2 class="modal-title">Change Nickname</h2>
+            <p class="modal-subtitle">It will be visible for other users</p>
+        </div>
+        
+        <div class="nickname-input-container">
+            <input type="text" id="nicknameInput" class="nickname-input" placeholder="Jane111" maxlength="20">
+        </div>
+        
+        <div class="nickname-modal-actions">
+            <button class="btn-close-modal" onclick="closeNicknameModal()">Close</button>
+            <button class="btn-save-nickname" onclick="saveNickname()">Save changes</button>
+        </div>
+    </div>
+</div>
+
+<!-- Phone Modal -->
+<div id="phoneModal" class="modal phone-modal">
+    <div class="modal-content phone-modal-content">
+        <div class="modal-top-bar">
+            <img src="<?php echo get_template_directory_uri(); ?>/imagens/logopoker.png" alt="POKER III" class="modal-logo">
+            <button class="modal-close" onclick="closePhoneModal()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="phone-progress-bar">
+            <div class="progress-line" id="progressLine"></div>
+            <div class="progress-step" id="progressStep">1 / 2</div>
+        </div>
+        
+        <!-- Step 1: Enter Phone Number -->
+        <div id="phoneStep1" class="phone-step">
+            <div class="modal-header">
+                <h2 class="modal-title">Change Phone Number</h2>
+                <p class="modal-subtitle-phone">This is the phone number we'll use<br>for authentication and account recovery.</p>
+            </div>
+            
+            <div class="phone-input-group">
+                <select class="phone-country-select" id="phoneCountryCode">
+                    <option value="+380">+380</option>
+                    <option value="+1" selected>+1</option>
+                    <option value="+44">+44</option>
+                    <option value="+55">+55</option>
+                    <option value="+351">+351</option>
+                </select>
+                <input type="tel" id="phoneInputModal" class="phone-input-modal" placeholder="11 222 33 44" maxlength="15">
+            </div>
+            
+            <div class="phone-modal-actions">
+                <button class="btn-close-modal" onclick="closePhoneModal()">Close</button>
+                <button class="btn-continue-phone" onclick="goToVerification()">Continue</button>
+            </div>
+        </div>
+        
+        <!-- Step 2: Verification Code -->
+        <div id="phoneStep2" class="phone-step" style="display: none;">
+            <div class="modal-header">
+                <h2 class="modal-title">Phone Number Verification</h2>
+                <p class="modal-subtitle-phone">We texted you a four-digit code to</p>
+                <p class="verification-phone-display" id="verificationPhoneDisplay">+357 99 99 999.</p>
+                <p class="modal-subtitle-phone verification-instruction">Please enter the code below to confirm your<br>phone number. Make sure to keep this<br>window open while you check your phone.<br>The code may take up to 10 minutes to arrive.</p>
+            </div>
+            
+            <div class="verification-code-container">
+                <input type="text" id="verificationCodeInput" class="verification-code-input" placeholder="○ ○ ○ ○" maxlength="4" pattern="[0-9]*">
+            </div>
+            
+            <div class="verification-actions">
+                <button class="btn-change-phone" onclick="backToPhoneInput()">Change phone number</button>
+                <button class="btn-resend-code" id="resendBtnModal" disabled>Resend in <span id="resendTimer">40</span> sec...</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Us Modal -->
+<div id="contactModal" class="modal contact-modal">
+    <div class="modal-content contact-modal-content">
+        <div class="modal-top-bar">
+            <img src="<?php echo get_template_directory_uri(); ?>/imagens/logopoker.png" alt="POKER III" class="modal-logo">
+            <button class="modal-close" onclick="closeContactModal()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="modal-header">
+            <h2 class="modal-title">Contact Us</h2>
+            <p class="modal-subtitle">We'd love to hear from you!</p>
+            <p class="modal-subtitle-contact">Use the form to contact us with any questions, concerns, or feedback.</p>
+        </div>
+        
+        <div class="contact-form-container">
+            <div class="message-input-wrapper">
+                <textarea id="contactMessage" class="contact-message-input" placeholder="Add your message" maxlength="500" rows="5"></textarea>
+                <div class="message-actions">
+                    <button class="btn-send-message" onclick="sendContactMessage()">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <span class="char-count"><span id="charCount">0</span>/500</span>
+                </div>
+            </div>
+            
+            <p class="contact-divider">Or reach out via:</p>
+            
+            <div class="contact-social-icons">
+                <a href="#" class="contact-social-btn discord" title="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="#" class="contact-social-btn telegram" title="Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="#" class="contact-social-btn whatsapp" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php get_footer(); ?>

@@ -1,0 +1,372 @@
+/* @author GustavoChaconDeveloper - github.com/GustavoChaconDeveloper */
+/* ===== APPLICATION PROCESS PAGE STYLES ===== */
+
+/* ── Top Banner ──────────────────────────────────────────────────── */
+.top-banner {
+    background: linear-gradient(90deg, #001845 0%, #003399 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 0;
+    position: relative;
+    z-index: 1000;
+}
+
+.top-banner-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 20px;
+}
+
+.banner-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.banner-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    white-space: nowrap;
+    font-style: italic;
+}
+
+.banner-countdown {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 4px;
+    min-width: 55px;
+    height: 33px;
+    background: rgba(23, 23, 23, 0.2);
+    border-radius: 8px;
+}
+
+.countdown-value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 100%;
+    text-align: center;
+}
+
+.countdown-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #F2F2F2;
+    line-height: 17px;
+    text-align: center;
+}
+
+.countdown-separator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin: 0;
+}
+
+.countdown-separator .dot {
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.banner-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 8px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.banner-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 992px) {
+    .top-banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2001;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-banner-content {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .banner-title {
+        font-size: 14px;
+    }
+
+    .countdown-value {
+        font-size: 16px;
+    }
+
+    .countdown-label {
+        font-size: 9px;
+    }
+}
+
+/* ── Section wrapper ─────────────────────────────────────────────── */
+.ap-section {
+    min-height: 100vh;
+    padding: 80px 20px 100px;
+}
+
+.ap-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ── Hero ────────────────────────────────────────────────────────── */
+.ap-hero {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.ap-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    line-height: 1.15;
+}
+
+.ap-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 auto;
+    line-height: 1.7;
+    max-width: 920px;
+    text-align: center;
+}
+
+.ap-steps-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+/* ── Steps ───────────────────────────────────────────────────────── */
+.ap-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 80px;
+}
+
+.ap-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+/* ── Poker Chip Icon ─────────────────────────────────────────────── */
+.ap-chip {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ap-chip-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+}
+
+.ap-step-content {
+    flex: 1;
+    padding-top: 8px;
+}
+
+.ap-step-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+
+.ap-step-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.72);
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* ── CTA ─────────────────────────────────────────────────────────── */
+.ap-cta {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid rgba(83, 140, 255, 0.45);
+    border-radius: 18px;
+    background: rgba(0, 18, 70, 0.55);
+    overflow: hidden;
+    min-height: 180px;
+}
+
+.ap-cta-image {
+    flex-shrink: 0;
+    width: 260px;
+    align-self: stretch;
+    position: relative;
+    overflow: hidden;
+}
+
+.ap-cta-image img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    object-fit: contain;
+    object-position: bottom left;
+}
+
+.ap-cta-body {
+    flex: 1;
+    padding: 40px 48px 40px 24px;
+    text-align: left;
+}
+
+.ap-cta-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: italic;
+    color: #ffffff;
+    margin: 0 0 14px 0;
+    line-height: 1.2;
+}
+
+.ap-cta-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 0 28px 0;
+    line-height: 1.65;
+    max-width: 480px;
+}
+
+.ap-cta-btn {
+    display: inline-block;
+    padding: 14px 36px;
+    background: #c0392b;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.ap-cta-btn:hover {
+    background: #a93226;
+    transform: translateY(-2px);
+    color: #ffffff;
+}
+
+/* ── Responsive ──────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .ap-section {
+        padding: 60px 16px 80px;
+    }
+
+    .ap-title {
+        font-size: 36px;
+    }
+
+    .ap-subtitle {
+        font-size: 15px;
+    }
+
+    .ap-step {
+        gap: 20px;
+    }
+
+    .ap-chip {
+        width: 62px;
+        height: 62px;
+    }
+
+    .ap-step-title {
+        font-size: 15px;
+    }
+
+    .ap-cta {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ap-cta-image {
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
+
+    .ap-cta-image img {
+        height: 100%;
+        object-position: center bottom;
+    }
+
+    .ap-cta-body {
+        padding: 32px 24px;
+        text-align: center;
+    }
+
+    .ap-cta-desc {
+        max-width: 100%;
+    }
+
+    .ap-cta-title {
+        font-size: 22px;
+    }
+}

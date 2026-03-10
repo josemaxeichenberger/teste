@@ -1,0 +1,12 @@
+{
+    "name": "poker111/api",
+    "description": "API Poker111 - Email SMTP",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Poker111\\": "../helpers/"
+        }
+    }
+}

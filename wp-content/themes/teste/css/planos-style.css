@@ -1,0 +1,186 @@
+/* @author GustavoChaconDeveloper - github.com/GustavoChaconDeveloper */
+
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    background: #00133D;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 100%;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 40px;
+    min-height: calc(100vh - 400px);
+}
+
+/* ===== 404 ERROR PAGE ===== */
+.error-404-section {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.error-404-title {
+    font-size: 160px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1;
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -5px;
+}
+
+.error-404-badge {
+    display: inline-block;
+    background: #FF0000;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    padding: 8px 24px;
+    margin-bottom: 30px;
+    transform: skewX(-8deg);
+}
+
+.error-404-text,
+.error-404-subtext {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 8px;
+}
+
+.error-404-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-404-home,
+.btn-404-account {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s;
+    min-width: 140px;
+}
+
+.btn-404-home {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-404-home:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-404-account {
+    background: #ffffff;
+    color: #0a1f5e;
+    border: 2px solid #ffffff;
+}
+
+.btn-404-account:hover {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    margin-top: auto;
+}
+
+.footer .container-fluid {
+    max-width: calc(100% - 80px);
+    margin: 0 auto;
+    background: #052774;
+    border-radius: 20px 20px 0 0;
+    padding: 40px 104px 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .error-404-title {
+        font-size: 100px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-404-title {
+        font-size: 72px;
+    }
+
+    .main-content {
+        padding: 40px 20px;
+    }
+}
